@@ -1,0 +1,186 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-20T07:58:09.832Z",
+        "line": 3,
+        "name": "Register Account",
+        "description": "",
+        "id": "upskill-elearning-signup;register-account",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14325000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on HomePage",
+            "match": {
+              "location": "stepDefinations.register_account.user_is_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2065000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "SignUp Button is available click on it",
+            "match": {
+              "location": "stepDefinations.register_account.sign_up_button_is_available_click_on_it()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3528000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter all mandatory fields and click on Register button",
+            "match": {
+              "location": "stepDefinations.register_account.enter_all_mandatory_fields_and_click_on_register_button(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname",
+                  "lastname",
+                  "email",
+                  "username",
+                  "password",
+                  "confirmpassword",
+                  "phone"
+                ]
+              },
+              {
+                "cells": [
+                  "bha040",
+                  "pra040",
+                  "bha040@gmail.com",
+                  "bha045",
+                  "bha040",
+                  "bha040",
+                  "7324089877"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 56000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "validate message Your personal settings have been registered on next page",
+            "match": {
+              "location": "stepDefinations.register_account.validate_message_your_personal_settings_have_been_registered_on_next_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 123000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User clicks top right corner",
+            "match": {
+              "location": "stepDefinations.register_account.user_clicks_top_right_corner()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Dropdown is shown",
+            "match": {
+              "location": "stepDefinations.register_account.dropdown_is_shown()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 52000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "validate the email which is entered",
+            "match": {
+              "location": "stepDefinations.register_account.validate_the_email_which_is_entered(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "send_email"
+                ]
+              },
+              {
+                "cells": [
+                  "bha040@gmail.com"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 48437000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Click on Compose on HomePage and Enter Message and click on send Message",
+            "match": {
+              "location": "stepDefinations.register_account.click_on_compose_on_home_page_and_enter_message_and_click_on_send_message(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "sendto",
+                  "subject",
+                  "message",
+                  "description"
+                ]
+              },
+              {
+                "cells": [
+                  "bha018@gmail.com",
+                  "To Test",
+                  "Hello Mr.bha..This is for testing",
+                  "test mail"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 882000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Validate Message Sent Acknowledgement",
+            "match": {
+              "location": "stepDefinations.register_account.validate_message_sent_acknowledgement()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Upskill elearning Signup",
+    "description": "",
+    "id": "upskill-elearning-signup",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/register.feature",
+    "tags": []
+  }
+]
