@@ -1,8 +1,0 @@
-Status: FAILED
-Time Taken: 527
-Size: 0
-Timestamp: Tue Jul 21 16:56:31 IST 2020
-TestStep: JDBC Request
-
------------------ Messages ------------------------------
-java.sql.SQLException: The server time zone value 'unknown' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
