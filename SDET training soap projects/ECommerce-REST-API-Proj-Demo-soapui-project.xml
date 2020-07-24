@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="e1f09c2e-1912-46c4-86a8-c381c7c85e9a" activeEnvironment="Default" name="ECommerce REST API Proj Demo" resourceRoot="" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="a492ab85-ebf1-4687-9147-e4d5732d3a83" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://ecommerceservice.herokuapp.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://ecommerceservice.herokuapp.com</con:endpoint></con:endpoints><con:resource name="Signup" path="/user/signup" id="cac3387d-b374-4f06-92e1-aa7e1420fa95"><con:settings/><con:parameters/><con:method name="Signup Request" id="2eb1117c-1550-43d5-bbac-c5c2e98a9490" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element xmlns:sig="https://ecommerceservice.herokuapp.com/user/signup">sig:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>201</con:status><con:params/><con:element xmlns:sig="https://ecommerceservice.herokuapp.com/user/signup">sig:Response</con:element></con:representation><con:request name="Signup" id="b27683e4-8f6d-4fe7-8ba9-bb196814fc09" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://ecommerceservice.herokuapp.com</con:endpoint><con:request>{
+	"email": "saileela@gmail.com",
+	"password": "sai@123"
+}
+</con:request><con:originalUri>https://ecommerceservice.herokuapp.com/user/signup</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="c314bef0-17ce-4dbc-8290-fce7ceaa5d2b" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://ecommerceservice.herokuapp.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://ecommerceservice.herokuapp.com</con:endpoint></con:endpoints><con:resource name="Login" path="/user/login" id="a813a64e-337c-4b46-8b0b-fa01f8473d21"><con:settings/><con:parameters/><con:method name="Login Request" id="3b7f204a-ef9a-49b9-b7e2-9031258008a1" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:log="https://ecommerceservice.herokuapp.com/user/login">log:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>401</con:status><con:params/><con:element xmlns:log="https://ecommerceservice.herokuapp.com/user/login">log:Fault</con:element></con:representation><con:request name="Login" id="eac2262d-53f4-48ab-ac01-c93c3d27936e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://ecommerceservice.herokuapp.com</con:endpoint><con:request>{
+	"email": "saileela@gmail.com",
+	"password": "sai@123"
+}
+</con:request><con:originalUri>https://ecommerceservice.herokuapp.com/user/login</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="ce4a80f2-051a-49ce-b3f2-c0418b89bc01" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://ecommerceservice.herokuapp.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://ecommerceservice.herokuapp.com</con:endpoint></con:endpoints><con:resource name="User" path="/user" id="4a52a758-c42b-45e7-ab3e-dfc5395be803"><con:settings/><con:parameters/><con:method name="GetAllUsers Request" id="59914d03-8855-437c-8b82-22a321697c98" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:user="https://ecommerceservice.herokuapp.com/user">user:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:user="https://ecommerceservice.herokuapp.com/user">user:Response</con:element></con:representation><con:request name="GetAllUsers" id="25536a31-d48f-437a-99ce-a66785405bd8" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjBkNjAwOTJkMDRlMDAwMTcwM2FiYmQiLCJpYXQiOjE1OTQ3MTIxMTAsImV4cCI6MTU5NDc5ODUxMH0.n9L-eVs6PrOQqzl6CacUNZLV0RY7Jq6i69TjeWueKMo" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://ecommerceservice.herokuapp.com</con:endpoint><con:request/><con:originalUri>https://ecommerceservice.herokuapp.com/user</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="f5f7c57c-1602-4075-90a8-992765d2304f" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://ecommerceservice.herokuapp.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://ecommerceservice.herokuapp.com</con:endpoint></con:endpoints><con:resource name="Id" path="/user/{id}" id="f74dc4e0-6256-403a-a5b7-72b046e94d33"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:value>5f0d5cfb2d04e0001703abb7</con:value><con:style>TEMPLATE</con:style><con:default>5f0d5cfb2d04e0001703abb7</con:default></con:parameter></con:parameters><con:method name="DeleteUserById Request" id="5696b026-c914-4980-b812-3e5242f9e294" method="DELETE"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:f0d="https://ecommerceservice.herokuapp.com/user/5f0d5a322d04e0001703ab97">f0d:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:f0d="https://ecommerceservice.herokuapp.com/user/5f0d5a322d04e0001703ab97">f0d:Response</con:element></con:representation><con:request name="DeleteUserById" id="7b06e160-4840-40dc-b586-8d59361f9b1d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjBkNWEzMjJkMDRlMDAwMTcwM2FiOTciLCJpYXQiOjE1OTQ3MTA2ODIsImV4cCI6MTU5NDc5NzA4Mn0.YGPRtPyJXDqAc6jiwSVcd6CmiXaKHQHDRXoaHTQwLEY" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://ecommerceservice.herokuapp.com</con:endpoint><con:request/><con:originalUri>https://ecommerceservice.herokuapp.com/user/5f0d5a322d04e0001703ab97</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="5f0d60092d04e0001703abbd" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="c1dc277a-e68e-4535-bfeb-af5cb6f571d0" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://ecommerceservice.herokuapp.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://ecommerceservice.herokuapp.com</con:endpoint></con:endpoints><con:resource name="Id" path="/user/{{id}}" id="dff1022d-24bd-4172-898d-1265eb2f245e"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:style>TEMPLATE</con:style></con:parameter></con:parameters><con:method name="Id 1" id="9b697538-2561-4e3f-93e6-e16803693a93" method="GET"><con:settings/><con:parameters/><con:request name="Request 1" id="dbabab27-5329-4fd0-9abf-e30651cbc874" mediaType="application/json"><con:settings/><con:endpoint>https://ecommerceservice.herokuapp.com</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="${Properties#IdToDelete}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="9ef1c244-0f3d-4855-a391-be1916bed61e" name="E2E"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="2f0a1afb-be0f-454e-81f6-764a5cd04421" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="E2E TC" searchProperties="true"><con:settings/><con:testStep type="properties" name="Properties" id="924fd399-94fe-4762-9ce8-06f6016b86ef"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>email</con:name><con:value>saileela@gmail.com</con:value></con:property><con:property><con:name>password</con:name><con:value>sai@123</con:value></con:property><con:property><con:name>accessToken</con:name><con:value>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjBlODUwYTlmY2JlMjAwMTc5YzhhMTkiLCJpYXQiOjE1OTQ3ODcwODYsImV4cCI6MTU5NDg3MzQ4Nn0.mJ3xjQSdHl2_OSXUZz_2Wrtc_4kgSeXr-LYWHS6ycp4</con:value></con:property><con:property><con:name>IdToDelete</con:name><con:value>5f0e850a9fcbe200179c8a19</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="restrequest" name="Signup" id="c85c1a0b-9139-4027-9c92-440fa6b0d407"><con:settings/><con:config service="https://ecommerceservice.herokuapp.com" resourcePath="/user/signup" methodName="Signup Request" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Signup" id="b27683e4-8f6d-4fe7-8ba9-bb196814fc09" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://ecommerceservice.herokuapp.com</con:endpoint><con:request>{
+	"email": "${Properties#email}",
+	"password": "${Properties#password}"
+}
+</con:request><con:originalUri>https://ecommerceservice.herokuapp.com/user/signup</con:originalUri><con:assertion type="GroovyScriptAssertion" id="d3a60404-5186-492f-b833-49ec04b48498" name="Script Assertion" disabled="true"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def request = context.testCase.getTestStepByName("Signup").getPropertyValue("Request")
+
+//to store response into obj in the form of json
+def obj = new JsonSlurper().parseText(request)
+
+//same as fetching node value in xml, the below fetches value for the passed tag
+def email = obj.email
+def password = obj.password
+
+//storing in proerties file
+context.testCase.getTestStepByName("Properties").setPropertyValue("email",email)
+context.testCase.getTestStepByName("Properties").setPropertyValue("password",password)
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Login" id="d2b97ff0-079b-484a-874d-6fd387a14c50"><con:settings/><con:config service="https://ecommerceservice.herokuapp.com" resourcePath="/user/login" methodName="Login Request" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Login" id="eac2262d-53f4-48ab-ac01-c93c3d27936e" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://ecommerceservice.herokuapp.com</con:endpoint><con:request>{
+	"email": "${Properties#email}",
+	"password": "${Properties#password}"
+}
+</con:request><con:originalUri>https://ecommerceservice.herokuapp.com/user/login</con:originalUri><con:assertion type="GroovyScriptAssertion" id="80e1982b-609d-4ea5-a679-405c15bfd86f" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+//def response = context.testCase.getTestStepByName("Login").getPropertyValue("Response")
+def response = messageExchange.response.responseContent
+
+//to store response into obj in the form of json
+def obj = new JsonSlurper().parseText(response)
+
+//same as fetching node value in xml, the below fetches value for the passed tag
+def accessToken = obj.accessToken
+
+//storing in proerties file
+context.testCase.getTestStepByName("Properties").setPropertyValue("accessToken",accessToken)
+
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="GetAllUsers" id="eb5ae81e-777f-4d4a-8442-503d7b5a0b5b"><con:settings/><con:config service="https://ecommerceservice.herokuapp.com" resourcePath="/user" methodName="GetAllUsers Request" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetAllUsers" id="25536a31-d48f-437a-99ce-a66785405bd8" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Basic ${Properties#accessToken}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://ecommerceservice.herokuapp.com</con:endpoint><con:request/><con:originalUri>https://ecommerceservice.herokuapp.com/user</con:originalUri><con:assertion type="GroovyScriptAssertion" id="9d9c7eb3-dbdf-478d-9541-ea5db99c3b25" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def response = context.testCase.getTestStepByName("GetAllUsers").getPropertyValue("Response")
+def loggedEmail = context.testCase.getTestStepByName("Properties").getPropertyValue("email")
+
+//to store response into obj in the form of json
+def obj = new JsonSlurper().parseText(response)
+def userlist = obj.users
+def IdToDelete = ''
+
+//same as fetching node value in xml, the below fetches value for the passed tag based on a condition
+for(def i : userlist){
+	if(i.email == loggedEmail){
+		IdToDelete=i._id
+		break
+	}
+}
+
+
+//storing in properties file
+context.testCase.getTestStepByName("Properties").setPropertyValue("IdToDelete",IdToDelete)
+
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="DeleteUserById" id="aadc53e3-814c-45ba-a908-5e3c7f357b3c"><con:settings/><con:config service="https://ecommerceservice.herokuapp.com" resourcePath="/user/{id}" methodName="DeleteUserById Request" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="DeleteUserById" id="7b06e160-4840-40dc-b586-8d59361f9b1d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Basic ${Properties#accessToken}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://ecommerceservice.herokuapp.com</con:endpoint><con:request/><con:originalUri>https://ecommerceservice.herokuapp.com/user/5f0d5a322d04e0001703ab97</con:originalUri><con:assertion type="Simple Contains" id="edfd1a63-d664-4792-99af-160e9355dbc3" name="Contains"><con:configuration><token>User deleted</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="${Properties#IdToDelete}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="sample" id="471d915c-878a-4b66-af52-9d69a1d109e4"><con:settings/><con:config service="https://ecommerceservice.herokuapp.com" resourcePath="/user/{id}" methodName="DeleteUserById Request" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="sample" id="7b06e160-4840-40dc-b586-8d59361f9b1d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjBkNWEzMjJkMDRlMDAwMTcwM2FiOTciLCJpYXQiOjE1OTQ3MTA2ODIsImV4cCI6MTU5NDc5NzA4Mn0.YGPRtPyJXDqAc6jiwSVcd6CmiXaKHQHDRXoaHTQwLEY" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://ecommerceservice.herokuapp.com</con:endpoint><con:request/><con:originalUri>https://ecommerceservice.herokuapp.com/user/5f0d5a322d04e0001703ab97</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="5f0d60092d04e0001703abbd" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="GetAllUsers 1" id="55cbb94c-ff1a-4a02-9160-a8ce5fd3f3c1"><con:settings/><con:config service="https://ecommerceservice.herokuapp.com" resourcePath="/user" methodName="GetAllUsers Request" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetAllUsers 1" id="25536a31-d48f-437a-99ce-a66785405bd8" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Basic ${Properties#accessToken}" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://ecommerceservice.herokuapp.com</con:endpoint><con:request/><con:originalUri>https://ecommerceservice.herokuapp.com/user</con:originalUri><con:assertion type="GroovyScriptAssertion" id="49d7551f-f35c-444e-8736-59e973daa450" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+def response = context.testCase.getTestStepByName("GetAllUsers 1").getPropertyValue("Response")
+def loggedEmail = context.testCase.getTestStepByName("Properties").getPropertyValue("email")
+
+//to store response into obj in the form of json
+def obj = new JsonSlurper().parseText(response)
+def userlist = obj.users
+
+//same as fetching node value in xml, the below fetches value for the passed tag based on a condition
+for(def i : userlist){
+	if(i.email == loggedEmail){
+		assert false
+	}
+}
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST Request" id="939524d1-e77d-409f-9381-63f54349a58c"><con:settings/><con:config service="https://ecommerceservice.herokuapp.com" resourcePath="/user/{id}" methodName="DeleteUserById Request" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="7b06e160-4840-40dc-b586-8d59361f9b1d" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjBkNWEzMjJkMDRlMDAwMTcwM2FiOTciLCJpYXQiOjE1OTQ3MTA2ODIsImV4cCI6MTU5NDc5NzA4Mn0.YGPRtPyJXDqAc6jiwSVcd6CmiXaKHQHDRXoaHTQwLEY" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:endpoint>https://ecommerceservice.herokuapp.com</con:endpoint><con:request/><con:originalUri>https://ecommerceservice.herokuapp.com/user/5f0d5a322d04e0001703ab97</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="5f0d60092d04e0001703abbd" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="5923a713-f10d-4168-8f31-24804420d563" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="DataDriven TC" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Data Driven For Rest" id="956b545d-3470-48ea-b9ad-9513e42bbd34"><con:settings/><con:config><script>import jxl.*
+import java.io.*
+import jxl.write.*
+
+//To get the access token
+def accessToken="0072e0e1307866fc86eca1530b30cf0220c0eb39"
+
+String filepath = "C:/Users/SaileelaKakaraparthi/Documents/IBM/trainings/SDET/API Testing/SampleData.xls"
+File myfile=new File(filepath)
+Workbook wb = Workbook.getWorkbook(myfile)
+def sheet = wb.getSheet("Sheet2")
+def rows = sheet.getRows()
+log.info rows
+
+for (def i=1;i&lt;rows;i++)
+{
+	Cell data = sheet.getCell(0,i)
+//	log.info data.getContents()
+	def get = new URL("http://rest-api.upskills.in/api/rest_admin/customers/"+data.getContents()).openConnection()
+	get.setRequestProperty("Authorization","bearer "+accessToken)
+	def RC = get.getResponseCode()
+	if(RC.equals(200))
+	{
+		log.info (get.getInputStream().getText())
+	}
+	else
+	{
+		log.info "entered value is wrong"
+	}
+}
+</script></con:config></con:testStep><con:testStep type="groovy" name="Database Testing" id="bd69f591-bba5-4dcd-bea1-eb5b104462c0"><con:settings/><con:config><script>import groovy.sql.Sql
+
+def accesstoken = "9de1ca60dc071504d9bbfcd3c4abe4100df4c939"
+
+//connecting to DB
+//we require username, pswd, driver, URL
+def url = "jdbc:mysql://localhost:3306/Ecommerce"
+def user = "root"
+def password = "root"
+def driver = "com.mysql.jdbc.Driver"
+
+//for soapUI to talk to DB &amp; fetch info we need JDBC Driver
+com.eviware.soapui.support.GroovyUtils.registerJdbcDriver(driver)
+
+//I will connect to my DB
+def sql = Sql.newInstance(url,user,password,driver)
+
+//sql query to execute
+sql.eachRow("select * from customerid")
+{
+	row ->
+//	def customerid=row.id
+	def customerid="$row.id"
+	log.info "Cust id is "+customerid
+	def get = new URL("http://rest-api.upskills.in/api/rest_admin/customers/"+customerid).openConnection()
+	get.setRequestProperty("Authorization","bearer "+accesstoken)
+	def RC = get.getResponseCode()
+	if(RC.equals(200))
+	{
+		log.info (get.getInputStream().getText())
+	}
+	else
+	{
+		log.info "entered value is wrong"
+	}
+	
+}
+sql.close()</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
