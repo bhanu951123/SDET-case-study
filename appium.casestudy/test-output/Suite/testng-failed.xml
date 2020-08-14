@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.appium.resource.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="TestNG(failed)">
+    <classes>
+      <class name="com.appium.testcase.TestRunnerkhanacademy">
+        <methods>
+          <include name="khanacadamey"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.appium.testcase.TestRunnerkhanacademy -->
+    </classes>
+  </test> <!-- TestNG(failed) -->
+</suite> <!-- Failed suite [Suite] -->

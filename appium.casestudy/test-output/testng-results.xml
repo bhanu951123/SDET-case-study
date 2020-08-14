@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="100849" started-at="2020-08-14T12:55:19 IST" finished-at="2020-08-14T12:56:59 IST">
+    <groups>
+    </groups>
+    <test name="TestNG" duration-ms="100849" started-at="2020-08-14T12:55:19 IST" finished-at="2020-08-14T12:56:59 IST">
+      <class name="com.appium.testcase.TestRunnerkhanacademy">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.appium.testcase.TestRunnerkhanacademy@448ff1a8]" name="beforeTest" is-config="true" duration-ms="20054" started-at="2020-08-14T12:55:19 IST" finished-at="2020-08-14T12:55:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="khanacadamey()[pri:0, instance:com.appium.testcase.TestRunnerkhanacademy@448ff1a8]" name="khanacadamey" duration-ms="79616" started-at="2020-08-14T12:55:39 IST" finished-at="2020-08-14T12:56:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- khanacadamey -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.appium.testcase.TestRunnerkhanacademy@448ff1a8]" name="afterTest" is-config="true" duration-ms="1103" started-at="2020-08-14T12:56:58 IST" finished-at="2020-08-14T12:56:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.appium.testcase.TestRunnerkhanacademy -->
+    </test> <!-- TestNG -->
+  </suite> <!-- Suite -->
+</testng-results>
